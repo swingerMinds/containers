@@ -3,21 +3,25 @@ import {BrowserRouter, Route, Link} from 'react-router-dom';
 
 const PageOne = () => {
     return (
+      
         <div>
-            not Good !
-            <Link to="/pagetwo">PageOne</Link>
+             Page One
+            <Link to="/pagetwo">To PageTwo</Link>
         </div>
 
     );
 };
 
 const PageTwo = () => {
-    return <div>
-        PageTwo
-        <button>
-            click Me!
-        </button>
-    </div>
+    return (
+        <div>
+            PageTwo
+            <button>
+                click Me!
+            </button>
+            <Link to="/">Navigate to Page One</Link>
+        </div>
+    );
 };
 
 const App = () => {
